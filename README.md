@@ -152,16 +152,7 @@ void main(List<String> args) async {
 
 - **Q:** Kenapa Harus pakai library ini?
 - **A:** Kami tidak memaksa anda memakai libary ini namun jika library ini dipakai anda akan mudah dalam development karena selain library ini gampang di baca dan di atur anda bisa mengcustom sesuka hati
-  
-- **Q:** Apa ada contoh penting yang wajib memakai library ini
-- **A:** Jika anda membuat server / program bot ini wajib karena anda anda deploy di app maka anda akan kesulitan membuat log, dengan library ini kamu bisa mengakses berbagai fitur yang ada di app, contoh program kamu ada error kamu bisa memanfatkan fitur text to speech, / contoh kamu ingin mengakses kamera jarak jauh anda bisa mengcustom sendiri namun perlu skills coding sedikit mumpuni tapi anda tidak perlu belajar native hanya belajar dart di library ini
-
-- **Q:** Saya membuat pogram generator image namun saat ini saya tidak tahu deploy flutter di server bisakah menggunakan ini di hp?
-- **A:** Tentu kamu bisa melakukan banyak hal menggunakan library ini dengan cukup simple
-
-- **Q:** Saya ingin mendapatkan pesan sms di hp namun wajib di kirim setiap saat di telegram apakah bisa?
-- **A:** Ya anda bisa menggunakan library ini
-  
+    
 
 ## 📑️ Features
  Saya bisa membuat fitur lebih dari bawah, anda hanya perlu donate / sponsor di github saya
