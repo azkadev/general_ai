@@ -1,7 +1,3 @@
-library general_ai_flutter;
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export "general_ai_flutter_core.dart";
+export "package:general_ai/general_ai.dart";
+export "package:general_ai_dart/general_ai_dart.dart";

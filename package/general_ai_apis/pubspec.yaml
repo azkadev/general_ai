@@ -1,6 +1,6 @@
 name: general_ai_apis
 description: A Library Full Package Template
-version: 0.0.0
+version: 0.0.2 #general_ai_libary
 homepage: https://github.com/azkadev/general_ai
 repository: https://github.com/azkadev/general_ai
 issue_tracker: https://github.com/azkadev/general_ai/issues 

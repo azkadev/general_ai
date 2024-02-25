@@ -1,6 +1,6 @@
 name: general_ai_dart
 description: A Library Full Package Template
-version: 0.0.0
+version: 0.0.2 #general_ai_libary
 homepage: https://github.com/azkadev/general_ai
 repository: https://github.com/azkadev/general_ai
 issue_tracker: https://github.com/azkadev/general_ai/issues 
@@ -30,6 +30,6 @@ dev_dependencies:
   lints: ^2.1.0
   test: ^1.24.0
 dependencies:
-  general_ai: ^0.0.0
+  general_ai: ^0.0.2 #general_ai_libary
   general_lib: ^0.0.27
   google_generative_ai: ^0.2.1
