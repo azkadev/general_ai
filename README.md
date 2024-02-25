@@ -176,11 +176,13 @@ void main(List<String> args) async {
 
 | NO | Nama                 | Deskripsi                                                               | ONLINE / ONLINE | ANDROID | IOS | LINUX | MACOS | WINDOWS | CLI | WEB | FUCHSIA |
 |----|----------------------|-------------------------------------------------------------------------|-----------------|---------|-----|-------|-------|---------|-----|-----|---------|
-| 1. | BARK                 | Hasilkan suara dari text secara natural dan ekspresif                   | OFFLINE         |         |     |       |       |         |     |     |         |
-| 2. | Google GENERATIVE AI | Chat Gemini / Bard                                                      | ONLINE          |         |     |       |       |         |     |     |         |
-| 3. | PIPER                | Hasilkan suara dari text dengan berbagai bahasa tanpa perlu spek tinggi | OFFLINE         |         |     |       |       |         |     |     |         |
-| 4. | Stable Diffusion     | Hasilkan Gambar Dari text dengan mudah                                  | OFFLINE         |         |     |       |       |         |     |     |         |
-| 5. | Whisper              | Hasilkan Text Dari suara secara realtime                                | OFFLINE         |         |     |       |       |         |     |     |         |
+| 1. | BARK                 | Hasilkan suara dari text secara natural dan ekspresif                   | OFFLINE         | ❌       | ❌   | ✅     | ❌     | ❌       | ✅   | ❌   | ❌       |
+| 2. | Google GENERATIVE AI | Chat Gemini / Bard                                                      | ONLINE          | ✅       | ✅   | ✅     | ✅     | ✅       | ✅   | ✅   | ❌       |
+| 3. | PIPER                | Hasilkan suara dari text dengan berbagai bahasa tanpa perlu spek tinggi | OFFLINE         | ❌       | ❌   | ✅     | ❌     | ❌       | ✅   | ❌   | ❌       |
+| 4. | Stable Diffusion     | Hasilkan Gambar Dari text dengan mudah                                  | OFFLINE         | ❌       | ❌   | ✅     | ✅     | ✅       | ✅   | ❌   | ❌       |
+| 5. | Whisper              | Hasilkan Text Dari suara secara realtime                                | OFFLINE         | ❌       | ❌   | ✅     | ✅     | ✅       | ✅   | ❌   | ❌       |
+
+<!-- ✅ ❌ -->
 
 ## Contoh
 
