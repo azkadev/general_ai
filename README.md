@@ -49,3 +49,150 @@ General Ai Adalah library DART & Flutter yang memungkinkan kamu bisa membuat ai 
 </p>
 
 ---
+
+
+## 🔗️ Links
+
+
+#### Docs / Tutorial / Example
+
+1. [GITHUB DOCS](/docs/)
+2. [Youtube](https://youtube.com/@azkadev)
+
+
+## 🌟️ Hal Yang Menarik
+
+1. Cross Platform Notifikasi
+2. Cross Platform Putar / Main Media (Video & Audio)
+3. Cross Platform Menggunakan Fitur SMS / MMS / CONTACTS
+4. Cross Platform Camera
+5. Cross Platform Security (Fingerprint, Face Id)
+
+## Cara Penggunaan
+
+Library ini hanya di buat untuk bahasa dart, bahasa code lain saya belum ada rencanamungkin jika saya sudah ada tenaga / waktu / uang lebih saya akan membuat bahasa code sendiri jadi lebih efficient
+
+- Dart
+  untuk menggunakan di dart kamu perlu typing
+  - CLI
+    ```bash
+    dart pub add general_ai_dart
+    ```
+  - IMPORT LIBRARY
+    ```dart
+    import "package:general_ai_dart/general_ai_dart.dart";
+    ```
+  - SCRIPT
+    ```dart
+    // ignore_for_file: non_constant_identifier_names
+    import "package:general_ai_dart/general_ai_dart.dart";
+    void main(List<String> args) async {
+      GeneralDart general_library = GeneralDart();
+      general_library.app_background;
+    }
+    ```
+
+- Flutter
+  untuk menggunakan di flutter kamu perlu typing
+  - CLI
+    ```bash
+    flutter pub add general_ai_flutter
+    ```
+  - IMPORT LIBRARY
+    ```dart
+    import "package:general_ai_flutter/general_ai_flutter.dart";
+    ```
+  - SCRIPT
+    ```dart
+    // ignore_for_file: non_constant_identifier_names
+    import "package:general_ai_flutter/general_ai_flutter.dart";
+    void main(List<String> args) async {
+      GeneralFlutter general_library = GeneralFlutter();
+      general_library.app_background;
+    }
+    ```
+
+### Full Install Flutter
+
+
+```bash
+flutter pub add general_ai_flutter
+```
+
+## ⚠️ Penting
+
+-  Walaupun kebanyakan contoh menggunakan flutter / GeneralFlutter sebagai class, library ini bisa di timpa / di pakai di manapun (cli, web, app) jadi misal anda membuat program cli namun mencoba deploy di lokal app anda bisa menggunakan yang ada di flutter
+- Tolong bantu library ini terus berkembang dengan cara stars / follow akun social media saya  / Donate / Sponsor (ini yang paling ngaruh)
+
+
+## Contoh Cepat Awal
+
+```dart
+// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps
+import "package:general_ai_dart/general_ai_dart.dart";
+
+void main(List<String> args) async {
+  GeneralDart general_library = GeneralDart();
+  // app background initialized
+  await general_library.app_background.has_permissions;
+  await general_library.app_background.initialize(
+    notificationTitle: "App Name",
+    notificationMessage: "Applikasi berjalan",
+  );
+  await general_library.app_background.enable_background;
+
+  //  text to speech
+  await general_library.text_to_speech.initialized();
+  await general_library.text_to_speech.speak(text: "text");
+  
+  // speech to text
+  await general_library.speech_to_text.has_permission;
+  await general_library.speech_to_text.initialized();
+  await general_library.speech_to_text.realtime_speech_to_text_word(
+    onResult: (result) {
+      print("result: ${result}");
+    },
+  );
+}
+```
+
+## ❔️ FAQS
+
+- **Q:** Kenapa Harus pakai library ini?
+- **A:** Kami tidak memaksa anda memakai libary ini namun jika library ini dipakai anda akan mudah dalam development karena selain library ini gampang di baca dan di atur anda bisa mengcustom sesuka hati
+  
+- **Q:** Apa ada contoh penting yang wajib memakai library ini
+- **A:** Jika anda membuat server / program bot ini wajib karena anda anda deploy di app maka anda akan kesulitan membuat log, dengan library ini kamu bisa mengakses berbagai fitur yang ada di app, contoh program kamu ada error kamu bisa memanfatkan fitur text to speech, / contoh kamu ingin mengakses kamera jarak jauh anda bisa mengcustom sendiri namun perlu skills coding sedikit mumpuni tapi anda tidak perlu belajar native hanya belajar dart di library ini
+
+- **Q:** Saya membuat pogram generator image namun saat ini saya tidak tahu deploy flutter di server bisakah menggunakan ini di hp?
+- **A:** Tentu kamu bisa melakukan banyak hal menggunakan library ini dengan cukup simple
+
+- **Q:** Saya ingin mendapatkan pesan sms di hp namun wajib di kirim setiap saat di telegram apakah bisa?
+- **A:** Ya anda bisa menggunakan library ini
+  
+
+## 📑️ Features
+ Saya bisa membuat fitur lebih dari bawah, anda hanya perlu donate / sponsor di github saya
+
+| NO  | Nama           | Deskripsi                                                       | ANDROID | IOS | LINUX | MACOS | WINDOWS | CLI | WEB | FUCHSIA |
+|-----|----------------|-----------------------------------------------------------------|---------|-----|-------|-------|---------|-----|-----|---------|
+| 1.  | APP            | Mengakses Banyak Hal Agar App Kamu semakin kompleks             |         |     |       |       |         |     |     |         |
+| 2.  | APP Background | Minta Ijin background dengan mudah                              |         |     |       |       |         |     |     |         |
+| 3.  | Battery        | Check battery kamu apakah sedang mengisi daya / tidak / level   |         |     |       |       |         |     |     |         |
+| 4.  | Device         | Check device kamu apakah jailbreak / root / emulator            |         |     |       |       |         |     |     |         |
+| 5.  | Gamepad        | Gunakan Gamepad Agar Kamu app kamu bisa lebih bagus             |         |     |       |       |         |     |     |         |
+| 6.  | Notification   | Kirim Notifikasi Lokal Dengan Mudah                             |         |     |       |       |         |     |     |         |
+| 7   | Player         | Putar Audi & Video Secara Mudah                                 |         |     |       |       |         |     |     |         |
+| 8.  | Permisssion    | Minta Ijin App Secara mudah                                     |         |     |       |       |         |     |     |         |
+| 9.  | Sim Card       | Baca Detail Sim Card                                            |         |     |       |       |         |     |     |         |
+| 10. | Sms            | Baca, Kirim, Edit contact, Dan Mendapatkan Contact Dengan Mudah |         |     |       |       |         |     |     |         |
+| 12. | Speech To Text | Hasilkan Text Dari Suara File / Live                            |         |     |       |       |         |     |     |         |
+| 13. | Text To Speech | Hasilkan Suara Dari Text                                        |         |     |       |       |         |     |     |         |
+
+## Contoh
+
+| NO | Screenshot / Demo | Descripction                                                                                                                                  | LINK | Open Source |
+|----|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|------|-------------|
+| 1  |                   | Sebuah Applikasi untuk menjalankan berbagai bot / userbot / ai dengan banyak fitur + bisa menjadi assistant pribadi + teman                   |      | TIDAK       |
+| 2. |                   | Sebuah Applikasi Telegram Pihak 3 Dengan banyak fitur menarik                                                                                 |      | TIDAK       |
+| 3. |                   | Sebuah applikasi dengan banyak fitur yang memungkinkan anda bisa berbisnis / bersenang senang / membeli jasa dengan mudah di 1 app / platform |      | TIDAK       |
