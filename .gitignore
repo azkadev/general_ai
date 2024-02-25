@@ -3,3 +3,5 @@
 .dart_tool/
 
 command_*.sh
+
+secret_script_*.dart

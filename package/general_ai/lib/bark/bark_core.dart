@@ -1,0 +1,5 @@
+class GeneralAiBarkBase {
+  GeneralAiBarkBase();
+
+  textToSpeech() {}
+}

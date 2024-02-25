@@ -1,0 +1,3 @@
+dependency_overrides:
+  general_ai:
+    path: ../general_ai 

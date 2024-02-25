@@ -1,0 +1,5 @@
+class GeneralAiStableDiffusionBase {
+  GeneralAiStableDiffusionBase();
+
+  textToImage() {}
+}
