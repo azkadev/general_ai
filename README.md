@@ -174,25 +174,15 @@ void main(List<String> args) async {
 ## 📑️ Features
  Saya bisa membuat fitur lebih dari bawah, anda hanya perlu donate / sponsor di github saya
 
-| NO  | Nama           | Deskripsi                                                       | ANDROID | IOS | LINUX | MACOS | WINDOWS | CLI | WEB | FUCHSIA |
-|-----|----------------|-----------------------------------------------------------------|---------|-----|-------|-------|---------|-----|-----|---------|
-| 1.  | APP            | Mengakses Banyak Hal Agar App Kamu semakin kompleks             |         |     |       |       |         |     |     |         |
-| 2.  | APP Background | Minta Ijin background dengan mudah                              |         |     |       |       |         |     |     |         |
-| 3.  | Battery        | Check battery kamu apakah sedang mengisi daya / tidak / level   |         |     |       |       |         |     |     |         |
-| 4.  | Device         | Check device kamu apakah jailbreak / root / emulator            |         |     |       |       |         |     |     |         |
-| 5.  | Gamepad        | Gunakan Gamepad Agar Kamu app kamu bisa lebih bagus             |         |     |       |       |         |     |     |         |
-| 6.  | Notification   | Kirim Notifikasi Lokal Dengan Mudah                             |         |     |       |       |         |     |     |         |
-| 7   | Player         | Putar Audi & Video Secara Mudah                                 |         |     |       |       |         |     |     |         |
-| 8.  | Permisssion    | Minta Ijin App Secara mudah                                     |         |     |       |       |         |     |     |         |
-| 9.  | Sim Card       | Baca Detail Sim Card                                            |         |     |       |       |         |     |     |         |
-| 10. | Sms            | Baca, Kirim, Edit contact, Dan Mendapatkan Contact Dengan Mudah |         |     |       |       |         |     |     |         |
-| 12. | Speech To Text | Hasilkan Text Dari Suara File / Live                            |         |     |       |       |         |     |     |         |
-| 13. | Text To Speech | Hasilkan Suara Dari Text                                        |         |     |       |       |         |     |     |         |
+| NO | Nama                 | Deskripsi                                                               | ONLINE / ONLINE | ANDROID | IOS | LINUX | MACOS | WINDOWS | CLI | WEB | FUCHSIA |
+|----|----------------------|-------------------------------------------------------------------------|-----------------|---------|-----|-------|-------|---------|-----|-----|---------|
+| 1. | BARK                 | Hasilkan suara dari text secara natural dan ekspresif                   | OFFLINE         |         |     |       |       |         |     |     |         |
+| 2. | Google GENERATIVE AI | Chat Gemini / Bard                                                      | ONLINE          |         |     |       |       |         |     |     |         |
+| 3. | PIPER                | Hasilkan suara dari text dengan berbagai bahasa tanpa perlu spek tinggi | OFFLINE         |         |     |       |       |         |     |     |         |
+| 4. | Stable Diffusion     | Hasilkan Gambar Dari text dengan mudah                                  | OFFLINE         |         |     |       |       |         |     |     |         |
+| 5. | Whisper              | Hasilkan Text Dari suara secara realtime                                | OFFLINE         |         |     |       |       |         |     |     |         |
 
 ## Contoh
 
-| NO | Screenshot / Demo | Descripction                                                                                                                                  | LINK | Open Source |
-|----|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|------|-------------|
-| 1  |                   | Sebuah Applikasi untuk menjalankan berbagai bot / userbot / ai dengan banyak fitur + bisa menjadi assistant pribadi + teman                   |      | TIDAK       |
-| 2. |                   | Sebuah Applikasi Telegram Pihak 3 Dengan banyak fitur menarik                                                                                 |      | TIDAK       |
-| 3. |                   | Sebuah applikasi dengan banyak fitur yang memungkinkan anda bisa berbisnis / bersenang senang / membeli jasa dengan mudah di 1 app / platform |      | TIDAK       |
+| NO | Screenshot / Demo | Descripction | LINK | Open Source |
+|----|-------------------|--------------|------|-------------|
