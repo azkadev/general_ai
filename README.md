@@ -62,11 +62,6 @@ General Ai Adalah library DART & Flutter yang memungkinkan kamu bisa membuat ai 
 
 ## 🌟️ Hal Yang Menarik
 
-1. Cross Platform Notifikasi
-2. Cross Platform Putar / Main Media (Video & Audio)
-3. Cross Platform Menggunakan Fitur SMS / MMS / CONTACTS
-4. Cross Platform Camera
-5. Cross Platform Security (Fingerprint, Face Id)
 
 ## Cara Penggunaan
 
@@ -85,10 +80,15 @@ Library ini hanya di buat untuk bahasa dart, bahasa code lain saya belum ada ren
   - SCRIPT
     ```dart
     // ignore_for_file: non_constant_identifier_names
-    import "package:general_ai_dart/general_ai_dart.dart";
+
+    import 'package:general_ai_dart/general_ai_dart_core.dart';
+
     void main(List<String> args) async {
-      GeneralDart general_library = GeneralDart();
-      general_library.app_background;
+      GeneralAiDart general_ai = GeneralAiDart();
+      general_ai.bark;
+      general_ai.google_generative_ai;
+      general_ai.piper;
+      general_ai.stable_diffusion;
     }
     ```
 
@@ -105,10 +105,14 @@ Library ini hanya di buat untuk bahasa dart, bahasa code lain saya belum ada ren
   - SCRIPT
     ```dart
     // ignore_for_file: non_constant_identifier_names
-    import "package:general_ai_flutter/general_ai_flutter.dart";
+    import "package:general_ai_flutter/general_ai_flutter.dart"; 
+
     void main(List<String> args) async {
-      GeneralFlutter general_library = GeneralFlutter();
-      general_library.app_background;
+      GeneralAiFlutter general_ai = GeneralAiFlutter();
+      general_ai.bark;
+      general_ai.google_generative_ai;
+      general_ai.piper;
+      general_ai.stable_diffusion;
     }
     ```
 
@@ -128,32 +132,20 @@ flutter pub add general_ai_flutter
 ## Contoh Cepat Awal
 
 ```dart
-// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps
-import "package:general_ai_dart/general_ai_dart.dart";
+// ignore_for_file: non_constant_identifier_names
+
+import 'package:general_ai_dart/general_ai_dart_core.dart';
 
 void main(List<String> args) async {
-  GeneralDart general_library = GeneralDart();
-  // app background initialized
-  await general_library.app_background.has_permissions;
-  await general_library.app_background.initialize(
-    notificationTitle: "App Name",
-    notificationMessage: "Applikasi berjalan",
+  GeneralAiDart general_ai = GeneralAiDart();
+  var res = general_ai.google_generative_ai.createAi(
+    ai_id: "main_ai",
+    api_key: "",
   );
-  await general_library.app_background.enable_background;
-
-  //  text to speech
-  await general_library.text_to_speech.initialized();
-  await general_library.text_to_speech.speak(text: "text");
-  
-  // speech to text
-  await general_library.speech_to_text.has_permission;
-  await general_library.speech_to_text.initialized();
-  await general_library.speech_to_text.realtime_speech_to_text_word(
-    onResult: (result) {
-      print("result: ${result}");
-    },
-  );
+  var result = await res.ask(prompt: "Tolong buatkan bahasa code dart hello world");
+  print(result);
 }
+
 ```
 
 ## ❔️ FAQS
@@ -173,16 +165,67 @@ void main(List<String> args) async {
 
 ## 📑️ Features
  Saya bisa membuat fitur lebih dari bawah, anda hanya perlu donate / sponsor di github saya
+ 
 
-| NO | Nama                 | Deskripsi                                                               | ONLINE / ONLINE | ANDROID | IOS | LINUX | MACOS | WINDOWS | CLI | WEB | FUCHSIA |
-|----|----------------------|-------------------------------------------------------------------------|-----------------|---------|-----|-------|-------|---------|-----|-----|---------|
-| 1. | BARK                 | Hasilkan suara dari text secara natural dan ekspresif                   | OFFLINE         | ❌       | ❌   | ✅     | ❌     | ❌       | ✅   | ❌   | ❌       |
-| 2. | Google GENERATIVE AI | Chat Gemini / Bard                                                      | ONLINE          | ✅       | ✅   | ✅     | ✅     | ✅       | ✅   | ✅   | ❌       |
-| 3. | PIPER                | Hasilkan suara dari text dengan berbagai bahasa tanpa perlu spek tinggi | OFFLINE         | ❌       | ❌   | ✅     | ❌     | ❌       | ✅   | ❌   | ❌       |
-| 4. | Stable Diffusion     | Hasilkan Gambar Dari text dengan mudah                                  | OFFLINE         | ❌       | ❌   | ✅     | ✅     | ✅       | ✅   | ❌   | ❌       |
-| 5. | Whisper              | Hasilkan Text Dari suara secara realtime                                | OFFLINE         | ❌       | ❌   | ✅     | ✅     | ✅       | ✅   | ❌   | ❌       |
+### `Bark`
 
-<!-- ✅ ❌ -->
+Hasilkan suara dari text secara natural dan ekspresif
+
+#### Platform Support
+
+| Android | iOS | MacOS | Web | Linux | Windows | CLI | FUCHSIA |
+|:-------:|:---:|:-----:|:---:|:-----:|:-------:|:---:|:-------:|
+|    ❌    |  ❌  |   ❌   |  ❌  |   ✅   |    ❌    |  ✅  |    ❌    |
+
+
+
+
+### `Google GENERATIVE AI`
+
+Hasilkan suara dari text secara natural dan ekspresif
+
+#### Platform Support
+
+| Android | iOS | MacOS | Web | Linux | Windows | CLI | FUCHSIA |
+|:-------:|:---:|:-----:|:---:|:-----:|:-------:|:---:|:-------:|
+|    ✅    |  ✅  |   ✅   |  ✅  |   ✅   |    ✅    |  ✅  |    ❌    |
+
+
+### `PIPER`
+
+Hasilkan suara dari text dengan berbagai bahasa tanpa perlu spek tinggi
+
+#### Platform Support
+
+| Android | iOS | MacOS | Web | Linux | Windows | CLI | FUCHSIA |
+|:-------:|:---:|:-----:|:---:|:-----:|:-------:|:---:|:-------:|
+|    ❌    |  ❌  |   ❌   |  ❌  |   ✅   |    ❌    |  ✅  |    ❌    |
+
+
+### `Stable Diffusion`
+
+Hasilkan Gambar Di Perangkat Anda
+
+#### Platform Support
+
+| Android | iOS | MacOS | Web | Linux | Windows | CLI | FUCHSIA |
+|:-------:|:---:|:-----:|:---:|:-----:|:-------:|:---:|:-------:|
+|    ❌    |  ❌  |   ❌   |  ❌  |   ✅   |    ❌    |  ✅  |    ❌    |
+
+
+
+### `Whisper`
+
+Hasil Text dari suara
+
+#### Platform Support
+
+| Android | iOS | MacOS | Web | Linux | Windows | CLI | FUCHSIA |
+|:-------:|:---:|:-----:|:---:|:-----:|:-------:|:---:|:-------:|
+|    ✅    |  ❌  |   ❌   |  ❌  |   ✅   |    ❌    |  ✅  |    ❌    |
+
+
+---
 
 ## Contoh
 
