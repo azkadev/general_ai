@@ -1,0 +1,5 @@
+dependency_overrides:
+  general_ai:
+    path: ../general_ai
+  general_ai_dart:
+    path: ../general_ai_dart
